@@ -1,0 +1,8 @@
+@keyframes unfold {
+	from {
+		left: 0;
+		opacity: 0;
+		transform: skew(0deg);
+		width: 0;
+	}
+}
