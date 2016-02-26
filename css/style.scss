@@ -1,0 +1,92 @@
+---
+---
+$logoWidth: 320px;
+$logoHeight: 200px;
+$stemHeight: 200px;
+$stemWidth: 10px;
+$stemAngle: 20deg;
+$logoAnimationDuration: 1s;
+$aColor: #3498db;
+$crossbarColor: darken(#bdc3c7, 7%);
+$mColor: darken(#2980b9, 5%);
+
+body {
+	background-color: #ecf0f1;
+}
+
+.logo {
+	height: $logoHeight;
+	margin: 100px auto 0;
+	position: relative;
+	width: $logoWidth;
+}
+
+.animate {
+	animation-duration: $logoAnimationDuration;
+	animation-name: unfold;
+}
+
+.stem {
+	height: $stemHeight;
+	position: absolute;
+	width: $stemWidth;
+}
+
+.left-stem {
+	transform: skew(-$stemAngle);
+	z-index: 2;
+}
+
+.right-stem {
+	transform: skew($stemAngle);
+	z-index: -1;
+}
+
+.initial-a {
+	.stem {
+		background-color: $aColor;
+	}
+
+	.left-stem {
+		left: 45px;
+	}
+
+	.right-stem {
+		left: 119px;
+	}
+
+	.crossbar {
+		border-bottom: $stemWidth solid $crossbarColor;
+		border-left: ($stemWidth * 0.4) solid transparent;
+		border-right: ($stemWidth * 0.4) solid transparent;
+		height: 0;
+		left: 38px;
+		position: absolute;
+		top: 110px;
+		width: 91px;
+		z-index: 1;
+	}
+}
+
+.initial-m {
+	.stem {
+		background-color: $mColor;
+	}
+
+	.left-stem {
+		left: 192px;
+	}
+
+	.right-stem {
+		left: 264px;
+	}
+}
+
+@keyframes unfold {
+	from {
+		left: 0;
+		opacity: 0;
+		transform: skew(0deg);
+		width: 0;
+	}
+}
