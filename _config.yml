@@ -1,0 +1,4 @@
+name: Alex Mueller
+markdown: kramdown
+sass:
+    style: compressed
