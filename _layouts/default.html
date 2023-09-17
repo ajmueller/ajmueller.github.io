@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ page.title }}</title>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="container">
-		{{ content }}
-	</div>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }}</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <div class="initial-a">
+          <div class="animate stem left-stem"></div>
+          <div class="animate crossbar"></div>
+          <div class="animate stem right-stem"></div>
+        </div>
+        <div class="initial-m">
+          <div class="animate stem left-stem"></div>
+          <div class="animate stem right-stem"></div>
+        </div>
+      </div>
+      {{ content }}
+    </div>
+  </body>
 </html>

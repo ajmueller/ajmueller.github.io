@@ -2,17 +2,6 @@
 layout: default
 title: Alex Mueller - Full-Stack Web Developer
 ---
-<div class="logo">
-	<div class="initial-a">
-		<div class="animate stem left-stem"></div>
-		<div class="animate crossbar"></div>
-		<div class="animate stem right-stem"></div>
-	</div>
-	<div class="initial-m">
-		<div class="animate stem left-stem"></div>
-		<div class="animate stem right-stem"></div>
-	</div>
-</div>
 
 <section>
 	<h1>my work</h1>
