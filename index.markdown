@@ -28,3 +28,10 @@ title: Alex Mueller - Full-Stack Web Developer
 		<li><a href="https://github.com/ajmueller" target="_blank" aria-label="GitHub"><img src="img/github.svg" alt="GitHub"><div class="details"><p class="details-title">GitHub</p><p>open source project contributions</p></div></a></li>
 	</ul>
 </section>
+
+<section>
+	<h1>just for fun</h1>
+	<ul class="links">
+		<li><a href="https://www.willitsnowinpdx.com" target="_blank" aria-label="Will It Snow In PDX"><img src="img/snow.svg" alt="snowflake"><div class="details"><p class="details-title">Will It Snow In PDX</p></div></a></li>
+	</ul>
+</section>
